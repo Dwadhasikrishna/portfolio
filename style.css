@@ -1,0 +1,260 @@
+*{
+    margin: 0PX;
+    padding: 0PX;
+    font-family: 'Lumanosimo', cursive;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;/* view port height ivh =19.2px */
+    background-color: white;
+    position: relative;
+}
+
+.navbar{
+    display:flex;/* to align side */
+    justify-content: space-between; /* childs get space */
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.logo{
+    width: 130px;
+}
+
+.listitem{
+    display: inline-block; /* to display in a line */
+    list-style: none; /* bullet points will be unvisible */
+    margin: 10px 20px; /* to getting space */
+  }
+
+  /* underline and blue clr kalayaan */
+.link{
+    color: black;
+    text-decoration: none; /* to remove underlines of links */
+    font-weight: bold; /* to getting bold the words */
+}
+.link:hover{ /* mouse konduchellumbol clr change aakum */
+    color: red;
+}
+
+.title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+
+.title_1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#lastname{
+    color:orange;
+    font-size: 50px;
+}
+
+.download{
+    text-decoration: none; /* to remove underlines of links */
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    display: inline-block; /* to display in a line */
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;/* relative aayitt ull divlekk varan vendi. */
+    right: 30px;
+    bottom: 0px;
+}
+
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%; /*girl left value change  */
+    bottom: 0px;/* girl bottom value change */
+    transform: translateX(-50%);/* Scroll effect kalayan venditt transform kodukkuka.translatex (x postion aayakond )-50(left 50% aayakond thirich -50% aakki) */
+    transition: bottom 1s,left 1s;
+}
+.images:hover #shape{ /* move cheyyan shape bottom 70px aakkuka */
+    bottom: 70px;
+}
+.images:hover #girl{/* move girl leftlekk 40%. */
+    left: 40%;
+}
+
+#about{
+    margin: 23% 8% 0px 8%;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    font-size: 30px;
+}
+
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+
+.about-content{
+    margin-top: 2rem;
+    display: grid; /* align side */
+    grid-template-columns: repeat(2,1fr);/* fr-frame,1fr=255px */
+    gap: 2rem;/* to set gap b/w to grids */
+}
+
+.about-image img{
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.about-details {
+    font-size: 19px;
+    font-weight: 400;
+    text-align: justify; /* strting and ending ore pole varan */
+}
+
+.information{
+    margin-top: 1rem;
+}
+
+.info-box{
+    margin-bottom: 1rem;
+}
+
+.info-box span{
+    margin-left: 1rem;
+}
+
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-image img{
+    width: 90%;
+    border-radius: 1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.bar-container h3, span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.html-bar{
+    background-color: yellow;
+    width: 95%;
+}
+
+.css-bar{
+    background-color: yellow;
+    width: 88%;
+}
+
+.react-bar{
+    background-color: yellow;
+    width: 89%;
+}
+.js-bar{
+background-color: yellow;
+    width: 85%;
+}
+
+.icon-set{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon,.up-arrow{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0PX 10PX;
+}
+
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right ,yellow,red);
+    /* background: linear-gradient(to right,blue,red); */
+}
+
+.icon:hover i{
+    color:white;
+    animation: shake 0.75s;
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+footer{
+    margin: 3rem 0px;
+}
+
+.up-arrow{
+    float: right;
+    margin: 0px 10px 50px 0px;
+    background-image: linear-gradient(to bottom right,yellow,red);
+}
+
+.up-arrow:hover i{
+    color: white;
+}
